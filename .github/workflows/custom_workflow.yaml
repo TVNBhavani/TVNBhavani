@@ -19,22 +19,22 @@ jobs:
 
       - name: Install dependencies
         run: |
-            cd tvn_bhavani_portfolio.client
+            cd tvnbhavani
             npm install
 
       - name: List contents of dist directory
         run: |
           echo "Listing the contents of the dist folder:"
-          ls -alh ./tvn_bhavani_portfolio.client
+          ls -alh ./tvnbhavani
 
       - name: Build the Angular project
         run: |
-            cd tvn_bhavani_portfolio.client
+            cd tvnbhavani
             npm run build -- --configuration production
 
       - name: Install angular-cli-ghpages
         run: |
-            cd tvn_bhavani_portfolio.client
+            cd tvnbhavani
             npm install -g angular-cli-ghpages
 
       - name: Configure Git user
@@ -45,11 +45,11 @@ jobs:
       - name: List contents of dist directory
         run: |
           echo "Listing the contents of the dist folder:"
-          ls -alh ./tvn_bhavani_portfolio.client/dist/
+          ls -alh ./tvnbhavani/dist/
 
       - name: Set permissions for dist folder
-        run: chmod -R 777 ./tvn_bhavani_portfolio.client/dist/tvn_bhavani_portfolio.client
+        run: chmod -R 777 ./tvnbhavani/dist/tvnbhavani
 
       - name: Deploy to GitHub Pages
         run: |
-          npx angular-cli-ghpages --dir=./dist/tvn-bhavani-portfolio --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/vt325456/TVN_bhavani_portfolio.git --branch=gh-pages --no-silent
+          npx angular-cli-ghpages --dir=./dist/tvnbhavani --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/vt325456/TVnbhavani_portfolio.git --branch=gh-pages --no-silent
