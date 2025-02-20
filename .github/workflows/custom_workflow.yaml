@@ -55,4 +55,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          npx angular-cli-ghpages --dir=./dist --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/TVNBhavani/TVNBhavani.git --branch=gh-pages --no-silent
+          npx angular-cli-ghpages --dir=./dist/TVNbhavani --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/TVNBhavani/TVNBhavani.git --branch=gh-pages --no-silent
