@@ -47,7 +47,7 @@ jobs:
       - name: List contents of dist directory
         run: |
           echo "Listing the contents of the dist folder:"
-          ls -alh ./
+          ls -alh ./TVNBhavani
 
 
       - name: Set permissions for dist folder
