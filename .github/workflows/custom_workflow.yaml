@@ -25,19 +25,18 @@ jobs:
 
       - name: Install dependencies
         run: |
+            cd TVNBhavani 
             npm install
 
-      - name: List contents of dist directory
-        run: |
-          echo "Listing the contents of the dist folder:"
-          ls -alh ./tvnbhavani
 
       - name: Build the Angular project
         run: |
+            cd TVNBhavani 
             npm run build -- --configuration production
 
       - name: Install angular-cli-ghpages
         run: |
+            cd TVNBhavani 
             npm install -g angular-cli-ghpages
 
       - name: Configure Git user
@@ -47,8 +46,8 @@ jobs:
 
 
       - name: Set permissions for dist folder
-        run: chmod -R 777 ./tvnbhavani/dist/tvnbhavani
+        run: chmod -R 777 ./dist/TVNBhavani 
 
       - name: Deploy to GitHub Pages
         run: |
-          npx angular-cli-ghpages --dir=./dist/tvnbhavani --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/vt325456/TVnbhavani_portfolio.git --branch=gh-pages --no-silent
+          npx angular-cli-ghpages --dir=./dist/TVNBhavani --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/TVNBhavani/TVNBhavani.git --branch=gh-pages --no-silent
