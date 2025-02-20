@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "TVN_Bhavani_Portfolio1": {
+    "TVNBhavani": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/tvn-bhavani-portfolio1",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "TVN_Bhavani_Portfolio1:build:production"
+              "buildTarget": "TVNBhavani:build:production"
             },
             "development": {
-              "buildTarget": "TVN_Bhavani_Portfolio1:build:development"
+              "buildTarget": "TVNBhavani:build:development"
             }
           },
           "defaultConfiguration": "development",
