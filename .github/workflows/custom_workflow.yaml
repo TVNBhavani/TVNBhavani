@@ -3,7 +3,7 @@ name: CI/CD for Angular App
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
