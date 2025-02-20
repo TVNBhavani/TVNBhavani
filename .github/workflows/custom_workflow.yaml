@@ -46,7 +46,7 @@ jobs:
 
 
       - name: Set permissions for dist folder
-        run: chmod -R 777 ./dist/TVNBhavani 
+        run: chmod -R 777 ./dist/
 
       - name: Deploy to GitHub Pages
         run: |
