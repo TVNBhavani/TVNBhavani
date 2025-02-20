@@ -44,6 +44,11 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions Bot"
 
+      - name: List contents of dist directory
+        run: |
+          echo "Listing the contents of the dist folder:"
+          ls -alh ./
+
 
       - name: Set permissions for dist folder
         run: chmod -R 777 ./dist/
