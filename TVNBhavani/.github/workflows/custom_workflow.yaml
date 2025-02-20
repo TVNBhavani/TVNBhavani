@@ -1,0 +1,55 @@
+name: CI/CD for Angular App
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+            cd tvn_bhavani_portfolio.client
+            npm install
+
+      - name: List contents of dist directory
+        run: |
+          echo "Listing the contents of the dist folder:"
+          ls -alh ./tvn_bhavani_portfolio.client
+
+      - name: Build the Angular project
+        run: |
+            cd tvn_bhavani_portfolio.client
+            npm run build -- --configuration production
+
+      - name: Install angular-cli-ghpages
+        run: |
+            cd tvn_bhavani_portfolio.client
+            npm install -g angular-cli-ghpages
+
+      - name: Configure Git user
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions Bot"
+
+      - name: List contents of dist directory
+        run: |
+          echo "Listing the contents of the dist folder:"
+          ls -alh ./tvn_bhavani_portfolio.client/dist/
+
+      - name: Set permissions for dist folder
+        run: chmod -R 777 ./tvn_bhavani_portfolio.client/dist/tvn_bhavani_portfolio.client
+
+      - name: Deploy to GitHub Pages
+        run: |
+          npx angular-cli-ghpages --dir=./dist/tvn-bhavani-portfolio --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/vt325456/TVN_bhavani_portfolio.git --branch=gh-pages --no-silent
