@@ -51,8 +51,8 @@ jobs:
 
 
       - name: Set permissions for dist folder
-        run: chmod -R 777 ./TVNBhavani/dist/
+        run: chmod -R 777 ./dist/
 
       - name: Deploy to GitHub Pages
         run: |
-          npx angular-cli-ghpages --dir=./TVNBhavani/dist/ --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/TVNBhavani/TVNBhavani.git --branch=gh-pages --no-silent
+          npx angular-cli-ghpages --dir=./dist --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/TVNBhavani/TVNBhavani.git --branch=gh-pages --no-silent
