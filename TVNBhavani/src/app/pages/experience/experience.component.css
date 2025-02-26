@@ -1,0 +1,59 @@
+.experience-container {
+  padding: 60px;
+  background-color: 
+  #00AAAA;
+  font-family: 'Poppins', sans-serif;
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+  .experience-header h2 {
+    font-size: 32px;
+    color: #D1F2EB;
+    margin-bottom: 10px;
+  }
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience-card {
+  background-color: #F3E6A0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+  .experience-card h3 {
+    font-size: 28px;
+    color: #00AAAA;
+  }
+
+.experience-duration,
+.experience-role {
+  font-size: 18px;
+  color: #00AAAA;
+  margin: 5px 0;
+}
+
+.experience-tasks {
+  padding-left: 20px;
+  list-style: circle;
+}
+
+  .experience-tasks li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+.experience-summary {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -21,5 +21,22 @@ export class HomeComponent implements OnInit {
       this.currentIndex++;
       setTimeout(() => this.typeText(), this.typingSpeed);
     }
+  }
+
+  constructor(private el: ElementRef) { }
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+    const elements = this.el.nativeElement.querySelectorAll('.scroll-animation');
+    elements.forEach((el: HTMLElement) => {
+      if (this.isElementInViewport(el)) {
+        el.classList.add('show');
+      }
+    });
+  }
+
+  private isElementInViewport(el: HTMLElement): boolean {
+    const rect = el.getBoundingClientRect();
+    return rect.top <= window.innerHeight - 100;
   }
 }

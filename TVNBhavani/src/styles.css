@@ -13,3 +13,16 @@ section .home {
   padding: 60px 0;
   min-height: 100vh;
 }
+
+/* Hide elements initially */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+  /* Make them visible when they scroll into view */
+  .scroll-animation.show {
+    opacity: 1;
+    transform: translateY(0);
+  }

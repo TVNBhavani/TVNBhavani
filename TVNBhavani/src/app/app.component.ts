@@ -12,5 +12,4 @@ export class AppComponent implements OnInit {
   ngOnInit() {
   }
 
-  title = 'tvn_bhavani_portfolio.client';
 }

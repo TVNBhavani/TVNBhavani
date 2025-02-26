@@ -4,6 +4,7 @@
   align-items: center; /* Centers content horizontally */
   justify-content: center;
   gap: 50px;
+  font-family: 'Poppins', sans-serif;
   padding: 60px;
   background-color: #00AAAA;
   margin: auto;

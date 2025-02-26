@@ -25,7 +25,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     ProjectsComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, HomeComponent, 
+    BrowserModule, HttpClientModule, HomeComponent,
     AppRoutingModule
   ],
   providers: [],
