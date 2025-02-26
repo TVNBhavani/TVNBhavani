@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -25,7 +25,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     ProjectsComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, HomeComponent,
+    FormsModule, BrowserModule, HttpClientModule, HomeComponent, 
     AppRoutingModule
   ],
   providers: [],
