@@ -5,10 +5,10 @@ Welcome to my GitHub! Below is a detailed overview of my professional and academ
 ---
 
 ## 📧 **Contact Information**
-- **Email**: [your-email@example.com](mailto:your-email@example.com)  
-- **LinkedIn**: [linkedin.com/in/your-profile](https://www.linkedin.com/in/your-profile)  
+- **Email**: [bhavanitalari2001@gmail.com](mailto:bhavanitalari2001@gmail.com)  
+- **LinkedIn**: [linkedin.com/TVNBHAVANI](https://www.linkedin.com/in/tvn-bhavani-83b6601b2/)
 - **GitHub**: [github.com/TVNBhavani](https://github.com/TVNBhavani)  
-- **Personal Portfolio**: [your-portfolio-link](https://www.your-portfolio-link.com)
+- **Personal Portfolio**: [portfolio-link]((https://tvnbhavani.github.io/TVNBhavani/))
 
 ---
 
@@ -98,21 +98,6 @@ I am a **Full Stack Developer** with a strong foundation in both **front-end** a
 ### 🧑‍💻 **Web Scraping & Data Extraction (R Programming)**  
 - Implemented **R-based** web scraping for extracting and analyzing academic journal data for research.
 - Automated data extraction processes, saving time and effort.
-
----
-
-## 🏅 **Certifications & Achievements**
-- **AWS Academy Cloud Foundations**  
-- **Certified Ethical Hacker (CEH)**  
-- **React.js Fundamentals**  
-- **Full Stack Web Development Bootcamp**
-
----
-
-## 🗣️ **How to Reach Me**  
-Feel free to reach out to me for any opportunities, collaborations, or questions. You can contact me via:
-- **Email**: [your-email@example.com](mailto:your-email@example.com)  
-- **LinkedIn**: [linkedin.com/in/your-profile](https://www.linkedin.com/in/your-profile)
 
 ---
 
