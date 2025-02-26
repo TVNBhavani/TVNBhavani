@@ -1,4 +1,4 @@
-# Veera Naga Bhavani Talari's Resume
+# Hi! I am Veera Naga Bhavani Talari
 
 Welcome to my GitHub! Below is a detailed overview of my professional and academic background. I am a passionate **Full Stack Developer** with hands-on experience in web development, especially in modern technologies like Angular, React, .NET, and more.
 
