@@ -56,17 +56,17 @@
     }
 
 .skills, .certifications {
-  background-color: rgba(209, 242, 235, 0.2); /* Light Mint with transparency */
+  background-color: #F3E6A0; /* Light Mint with transparency */
   padding: 20px;
   border-radius: 10px;
-  width:800px;
+  width: 800px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
   .skills h3, .certifications h3 {
     font-size: 24px;
-    color: #D1F2EB;
+    color: #00AAAA;
     margin-bottom: 10px;
   }
 
@@ -77,7 +77,7 @@
 
   .skills li, .certifications li {
     font-size: 18px;
-    color: #D1F2EB;
+    color: #333;
     margin-bottom: 8px;
     line-height: 1.6;
   }
